@@ -479,14 +479,7 @@ git clone https://github.com/yourusername/devshield.git
 - Use clear, descriptive variable names
 - Comment complex logic
 - Follow JavaScript best practices
-- Keep functions focused and small
-
----
-
-## 📝 Resume Description
-
-> Developed a Chrome extension that performs real-time structural and security analysis of webpages using DOM inspection and client-side risk heuristics inspired by OWASP guidelines. Implemented scoring logic, JWT detection, API key pattern analysis, HTTPS verification, and theme switching using Manifest V3 architecture.
-
+- Keep functions focused and 
 ---
 
 ## 📄 License
