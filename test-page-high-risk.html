@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport intentionally removed for testing -->
+  <!-- Meta description intentionally removed for testing -->
+  <title>High Risk Test Page - DevShield</title>
+</head>
+<body>
+  <h1>High Risk Test Page</h1>
+  <p>This page has intentional security issues for testing.</p>
+
+  <!-- Image without alt attribute -->
+  <img src="https://via.placeholder.com/150">
+  <img src="https://via.placeholder.com/150">
+
+  <!-- Inline script with potential API key -->
+  <script>
+    // Test API key patterns (these are placeholders)
+    var apiKey = "sk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+    var secret = "secret_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+    console.log('test');
+  </script>
+
+  <!-- External scripts (intentionally many for "excessive" test) -->
+  <script src="https://example.com/1.js"></script>
+  <script src="https://example.com/2.js"></script>
+  <script src="https://example.com/3.js"></script>
+  <script src="https://example.com/4.js"></script>
+  <script src="https://example.com/5.js"></script>
+  <script src="https://example.com/6.js"></script>
+  <script src="https://example.com/7.js"></script>
+  <script src="https://example.com/8.js"></script>
+  <script src="https://example.com/9.js"></script>
+  <script src="https://example.com/10.js"></script>
+  <script src="https://example.com/11.js"></script>
+
+  <!-- Bearer token in HTML -->
+  <!-- Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c -->
+
+  <!-- Form without proper security -->
+  <form>
+    <input type="text" name="data">
+    <input type="submit">
+  </form>
+</body>
+</html>
+
